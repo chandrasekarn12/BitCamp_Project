@@ -1,3 +1,9 @@
+# MOVING AVERAGE
+#
+# Trading algorithm that uses long-term and medium/short-term moving averages
+#
+
+
 import pandas as pd
 
 

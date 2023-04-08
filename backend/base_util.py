@@ -1,3 +1,8 @@
+# BASE UTILITY METHODS
+#
+# Contains methods to get account information, positions, and make orders
+#
+
 import config
 from alpaca.trading.requests import MarketOrderRequest
 from alpaca.trading.enums import OrderSide, TimeInForce
