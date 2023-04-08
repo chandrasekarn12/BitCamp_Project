@@ -3,9 +3,15 @@ from alpaca.trading.requests import MarketOrderRequest
 from alpaca.trading.enums import OrderSide, TimeInForce
 from alpaca.trading.client import TradingClient
 
-
 trading_client = TradingClient(config.API_KEY, config.SECRET_KEY, paper=True)
-account = trading_client.get_account()
+
+
+def get_account():
+    return trading_client.get_account()
+
+
+def get_positions():
+    return trading_client.get_all_positions()
 
 
 def order(symbol, qty, side):
@@ -23,3 +29,4 @@ def order(symbol, qty, side):
     except Exception as e:
         print('order() error: {0}'.format(e))
         return False
+
